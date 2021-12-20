@@ -19,11 +19,10 @@
 error_reporting(E_ALL);
 
 // pull environment vars
-$merchantId = getenv('GATEWAY_MERCHANT_ID');
-$password = getenv('GATEWAY_API_PASSWORD');
-$region = getenv('GATEWAY_REGION');
-$apiVersion = getenv('GATEWAY_API_VERSION');
-echo $merchantId."<br>".$password."<br>".$region."<br>".$apiVersion."<br>";
+$merchantId = "testmerch_a_25p";
+$password = "458ca2e221d6ac8009e780fee723dfb3";
+$region = "ASIA_PACIFIC";
+$apiVersion = "61";
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
